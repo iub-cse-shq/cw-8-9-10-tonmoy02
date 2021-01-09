@@ -1,0 +1,11 @@
+<%- include('./partials/header.ejs') %>
+
+    <h1>this is</h1>
+    <% console.log("artilecleAll") %>
+    <% console.log(articles) %>
+    <ul>
+        <% for(var i=0; i<articles.length; i++) { %>
+           <li> <%= articles[i].title %> </li>
+        <% } %>
+           </ul>
+ <%- include('partials/footer.ejs') %>
